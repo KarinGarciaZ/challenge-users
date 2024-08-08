@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0.3);
+  border: 1px solid rgba(var(--card-border-rgb), .3);
+  transition: background 200ms, border 200ms;
+  width: 19rem;
+  height: 9rem;
+}
+
+.cardElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+  
+.cardElements img {
+  max-width: 5rem;
+}
+
+.cardData {
+  padding: 0 1rem;
+}
+
+.cardName {
+  font-size: 1.5rem;
+}
+
+.cardEmail {
+  font-size: 0.8rem;
+}
+
+.cardMore {
+  display: flex;
+  border-top: 1px solid rgba(var(--card-border-rgb), .3);
+}
+
+.cardMore a {
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem 0;
+  color: rgba(var(--card-neon-rgb), 0.7);
+  transition: color 200ms;
+}
+
+.cardMore a:hover {
+  color: rgba(var(--card-neon-rgb), 1);
+}
+
+@media (max-width: 720px) {
+  .card {
+    margin: 0.5rem;
+    width: 13rem;
+    height: 15rem;
+  }
+
+  .cardElements {
+    flex-direction: column;
+  }
+
+  .cardElements img {
+    max-width: 8rem;
+  }
+  
+  .cardData {
+    padding: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}

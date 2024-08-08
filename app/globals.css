@@ -70,6 +70,7 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+    --card-neon-rgb: 24, 250, 227;
   }
 }
 
@@ -103,5 +104,11 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 720px) {
+  * {
+    font-size: 14px;
   }
 }
