@@ -1,0 +1,1 @@
+export const AVATAR_URL = 'https://upload.wikimedia.org/wikipedia/commons/6/67/User_Avatar.png';
